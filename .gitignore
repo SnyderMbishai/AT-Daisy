@@ -1,0 +1,6 @@
+.env
+__pycache__/main.cpython-38.pyc
+__pycache__/settings.cpython-38.pyc
+app/__pycache__/__init__.cpython-38.pyc
+app/__pycache__/sms.cpython-38.pyc
+app/__pycache__/views.cpython-38.pyc
