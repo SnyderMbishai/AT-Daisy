@@ -1,5 +1,5 @@
 class USSD:
-    def handle_at_ussd():
+    def handle_at_ussd(text):
         #1. What's your name?
         #2. How can we be of assistence? 1.Emergency 2.info 3.Other
         ##
@@ -10,24 +10,23 @@ class USSD:
         # if 2. -> Info 
                 # Give them link + data
         # if 3.-> Other
-                # forward message to a case officer +
-        
-        session_id   = ""
-        serviceCode  = ""
-        phone_number = ""
-        text  = ""
+                # forward message to a case officer + provide info link
+
 
         if text == "":
-            pass
-        if text == "":
-            pass
-        if text == "":
-            pass
-        if text == "":
-            pass
-        if text == "":
-            pass
-        if text == "":
-            pass
-        if text == "":
-            pass
+            breakpoint()
+            response  = "CON What would you want to check \n"
+            response += "1. My Account \n"
+            response += "2. My phone number"
+        # if text == "":
+        #     pass
+        # if text == "":
+        #     pass
+        # if text == "":
+        #     pass
+        # if text == "":
+        #     pass
+        # if text == "":
+        #     pass
+        # if text == "":
+        #     pass

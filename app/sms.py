@@ -10,14 +10,14 @@ class SMS:
         self.username = settings.USER_NAME
         self.api_key = settings.API_KEY
 
-        africastalking.initialize(self.username, self.api_key)
+        africastalking.initialize(username=self.username, api_key=self.api_key)
         self.sms = africastalking.SMS
 
     def send(self, phone_numbers, message):
         recipients = phone_numbers
         message = message
 
-        sender = settings.SENDER
+        # sender = settings.SENDER
         try:
             response = self.sms.send(message, recipients)
             print(response)
